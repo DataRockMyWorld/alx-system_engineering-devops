@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# File to print path to current working directory
-
-path = pwd
-echo $path
