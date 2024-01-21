@@ -1,4 +1,4 @@
-# Puppet script to create ssh config file
+# Puppet script to create ssh config file for this task
 file_line { 'Turn off passwd auth':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
