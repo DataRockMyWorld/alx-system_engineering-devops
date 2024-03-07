@@ -9,7 +9,8 @@ def top_ten(subreddit):
     ua = "python:subreddit.subscriber.counter:v1.0 (by /u/juelzgh)"
     headers = {"User-Agent": ua}
     params = {"limit": 10}
-    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    response = requests.get(url, headers=headers, params=params,
+                            allow_redirects=False)
     if response.status_code == 404:
         print("None")
         return
